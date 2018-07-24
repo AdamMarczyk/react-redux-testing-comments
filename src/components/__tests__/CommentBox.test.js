@@ -17,9 +17,9 @@ afterEach(() => {
   wrapped.unmount();
 });
 
-it('has a text area and a button', () => {
+it('should have a text area and two buttons', () => {
   expect(wrapped.find('textarea').length).toEqual(1);
-  expect(wrapped.find('button').length).toEqual(1);
+  expect(wrapped.find('button').length).toEqual(2);
 });
 
 describe('the text area', () => {
@@ -29,11 +29,11 @@ describe('the text area', () => {
     });
     wrapped.update();
   });
-  it('has a text area that users can type in', () => {
+  it('should have a text area that users can type in', () => {
     expect(wrapped.find('textarea').prop('value')).toEqual('new comment');
   });
 
-  it('empties the textarea when input is submitted', () => {
+  it('should empty the textarea when input is submitted', () => {
     wrapped.find('form').simulate('submit');
     wrapped.update();
     expect(wrapped.find('textarea').prop('value')).toEqual('');
