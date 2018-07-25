@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 
 export default ChildComponent => {
   class ComposedComponent extends Component {
-    componentDidMount = () => {
+    componentDidMount() {
       this.shouldNavigateAway();
-    };
+    }
 
-    componentDidUpdate = (prevProps, prevState) => {
+    componentDidUpdate(prevProps, prevState) {
       this.shouldNavigateAway();
-    };
+    }
 
     shouldNavigateAway = () => {
       if (!this.props.auth) {
