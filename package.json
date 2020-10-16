@@ -7,7 +7,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "moxios": "^0.4.0",
-    "react": "^16.4.1",
+    "react": "^16.14.0",
     "react-dom": "^16.4.2",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
